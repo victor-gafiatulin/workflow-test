@@ -1,0 +1,13 @@
+name: Continuous Integration
+
+on:
+  pull_request
+
+env:
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo 'Hello  Github Actions'
